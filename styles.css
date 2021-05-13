@@ -1,0 +1,87 @@
+.navbar-brand{
+  margin-left: 46%;
+  font-family: 'Crimson Text', serif;
+  /* border: 3px solid yellow; */
+}
+
+
+.main-frame{
+  position: relative;
+  margin-top: 5px;
+
+  /* border: 3px solid red; */
+}
+
+.btn{
+  position: relative;
+  left: 20%;
+  /* border: 3px solid green; */
+}
+
+#main-photo{
+  height: 427px;
+  width: 712px;
+}
+
+
+p {
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+}
+
+.btn_index{
+  margin-top: 20px;
+  margin-left: 30%;
+}
+
+.div_sign_description{
+  margin-left: 20px;
+  margin-right:20px;
+}
+
+
+#card_back, #card_front , .card-frame{
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+}
+
+.div_sign_description{
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.card-container {
+  perspective: 1000;
+}
+
+.card-container, .front, .back {
+  width: 400px;
+  height: 400px;
+}
+
+.card-B {
+  transition: 2s;
+  transform-style: preserve-3d;
+  positon: relative;
+}
+
+.front , .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.front {
+	z-index: 2;
+}
+
+.card-B:hover {
+  transform: rotateY(180deg);
+}
